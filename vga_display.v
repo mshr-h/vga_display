@@ -2,6 +2,7 @@
 //   pixel clock: 25.157MHz
 // 800 x 600 @ 60 Hz
 //   pixel clock: 40MHz
+`timescale 1ns/1ns
 module vga_display
 (
   input  wire clk_pix,

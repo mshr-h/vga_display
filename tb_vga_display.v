@@ -1,6 +1,6 @@
 `include "./vga_display.v"
 
-`timescale 1ps/1ps
+`timescale 1ns/1ns
 `default_nettype none
 module tb_vga_display;
 
