@@ -1,0 +1,5 @@
+compiler: iverilog
+before_install:
+  - sudo apt-get install -qq iverilog
+script:
+  - sh make.sh
