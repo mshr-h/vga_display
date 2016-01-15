@@ -1,5 +1,17 @@
+sudo: false
 compiler: iverilog
+addons:
+  apt_packages:
+  - autoconf
+  - bison
+  - build-essential
+  - flex
+  - gperf
+
 before_install:
-  - sudo apt-get install -qq iverilog
+  - wget https://gist.githubusercontent.com/mshr-h/c465d9b25a3b2326fbcc/raw/install-iverilog.sh
+  - sh install-iverilog.sh `pwd`/iverilog
+  - export PATH=`pwd`/iverilog/bin:$PATH
+
 script:
   - sh make.sh
